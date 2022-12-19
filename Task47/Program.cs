@@ -9,6 +9,7 @@ RandomizeArray(array);
 
 PrintArray(M, N, array);
 
+Console.WriteLine($"Массив заполненный случайными вещественными числами: ");
 void RandomizeArray(float[,] array)
 {
     Random rnd = new Random();
@@ -17,7 +18,6 @@ void RandomizeArray(float[,] array)
             array[x, y] = (float)rnd.NextDouble() * 10;
 }
 
-Console.WriteLine($"Количество чисел больше 0: ");
 
 
 int ReadInt(string prompt)
